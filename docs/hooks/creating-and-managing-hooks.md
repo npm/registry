@@ -13,7 +13,7 @@ The following fields are required in the post body:
 
 | name | type | meaning |
 | ---- | ---- | ------- |
-| `type` | string | type of object being watched; `package` or `scope` |
+| `type` | string | type of object being watched; `package`, `scope`, or `owner` |
 | `name` | string | name of package or organization/user scope to watch, e.g, `@scope` or `package` |
 | `endpoint` | uri | full uri of the endpoint to post the notification to |
 | `secret` | string | a secret shared between the registry & you; used to sign the payload |
