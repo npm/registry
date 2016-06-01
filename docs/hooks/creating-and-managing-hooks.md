@@ -1,6 +1,6 @@
 # Creating and Managing Hooks
 
-You can create hooks using the [wombat-cli], or you can write
+You can create hooks using [wombat](https://www.npmjs.com/package/wombat), or you can write
 an application that can create and manage them programmatically.
 These docs will focus on the latter.
 
