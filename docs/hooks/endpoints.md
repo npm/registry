@@ -6,8 +6,8 @@ Create a webhook. All of the following fields are required in the post body:
 
 | name | type | meaning |
 | ---- | ---- | ------- |
-| `type` | string | type of object being watched; `package` or `scope` |
-| `name` | string | name of package or organization/user scope to watch, e.g, `@scope/package` or `package` |
+| `type` | string | type of object being watched; `package`, `scope`, or `owner` |
+| `name` | string | name of package or organization/user scope to watch, e.g, `package`, `@scope`, `@scope/package` etc. |
 | `endpoint` | uri | full uri of the endpoint to post the notification to |
 | `secret` | string | a secret shared between the registry & you; used to sign the payload |
 
