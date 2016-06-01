@@ -40,7 +40,7 @@ the outer object has basic information about the event type and the package that
 ### events
 
 | event | meaning | npm command |
-| ----- | ------- |
+| ----- | ------- | ----------- |
 | `package:star` | a package was starred | `npm star package` |
 | `package:unstar` | a pckage was unstarred | `npm unstar package` |
 | `package:publish` | a package was published | `npm publish` |
