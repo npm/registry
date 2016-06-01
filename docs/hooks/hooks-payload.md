@@ -20,7 +20,7 @@ the outer object has basic information about the event type and the package that
 | `type`    | string | this is the object type. `"package"` is the only supported type for now. we may have more types in the future or hooks that can apply to more than one type of changed object |
 | `version` | string | the version of this payload envelope. when we make changes to this payload object we'll change this version.|
 | `sender`  | object | an object with a username property. this is the npm username of the person who owns this webhook|
-| `payload` | object | for package type hooks this is the package document. The same data as curling the registry directly https://registry.npmjs.com/packagename`|
+| `payload` | object | for package type hooks this is the package document. The same data as curling the registry directly https://registry.npmjs.com/packagename` |
 | `change`  | object | when available, this contains attributes that were modified and used to identify the change type. the keys in this object are variable to event type.|
 | `time`    | int    | this is the unix timestamp in ms. its useful for logging but practically it provides a nonce that helps folks identify/prevent replay attacks|
 
