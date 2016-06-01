@@ -24,6 +24,7 @@ Hooks can be added to:
   - specific packages, i.e. `lodash`
   - all packages in a user scope, i.e. `@username`
   - all packages in an organization scope, i.e. `@npmcorp`
+  - all packages maintained by a user, i.e. `substack`
 
 #### Any plans on expanding the offerings?
 
