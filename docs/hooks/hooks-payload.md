@@ -49,8 +49,8 @@ the outer object has basic information about the event type and the package that
 | `package:owner-rm` | removed an owner | `npm owner rm username`|
 | `package:dist-tag` | dist tag added | `npm dist-tag add package@1.0.0 beta` |
 | `package:dist-tag-rm` | dist tag removed | `npm dist-tag rm package beta` |
-| `package:deprecate` | a version was deprecated | `npm deprecate package@1.0.0 "dont use this"` |
-| `package:undeprecate` | a version was undeprecared | `npm deprecate package@1.0.0 ""` |
+| `package:deprecated` | a version was deprecated | `npm deprecate package@1.0.0 "dont use this"` |
+| `package:undeprecated` | a version was undeprecared | `npm deprecate package@1.0.0 ""` |
 | `package:change` | this is a catchall event. if for some reason im unable to identify the change type this type will be served | unknown | 
 
 ### change object
@@ -65,7 +65,7 @@ A publish to a latest version will be event type `package:publish`, but since it
 | dist-tag | string | the tag that was changed | `package:dist-tag`, `package:dist-tag-rm` |
 | user | string | the npm username of the starer | `package:star`, `package:unstar` |
 | maintainer | string | the npm username of the changed maintainer/owner | `package:owner`, `package:owner-rm` |
-| deprecated | string | the version of the package that was deprecated | `package:deprecate`, package:undeprecate` |
+| deprecated | string | the version of the package that was deprecated | `package:deprecated`, package:undeprecated` |
 
 
 ## security
@@ -73,4 +73,3 @@ A publish to a latest version will be event type `package:publish`, but since it
 hooks are delivered with an `x-npm-signature` header. this value is produced by taking your hook [secret](../creating-and-managing-hooks.md#creating-a-new-hook) 
 
 validating this signature is done like this https://github.com/npm/npm-hook-receiver/blob/master/index.js#L24 
-
