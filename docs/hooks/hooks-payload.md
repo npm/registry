@@ -30,7 +30,7 @@ the outer object has basic information about the event type and the package that
     "name': "lodash",
     "type": "package",
     'version': "1.0.0",
-    'hookOwner': { "username": "soldair"},
+    'sender': { "username": "soldair"},
     'payload': {..package metadata..},
     'change': {..change data object..},
     "time": 1464791199635
