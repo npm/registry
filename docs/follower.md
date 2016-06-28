@@ -17,6 +17,8 @@ from every version of every package in the npm registry? Some neat ideas:
 
 And more! So stop waiting and write a follower!
 
+Checkout the final code here: https://github.com/npm/registry-follower-tutorial
+
 ## prerequisites
 
 In order to follow along with this tutorial you'll need [NodeJS] and
