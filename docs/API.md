@@ -107,8 +107,10 @@
 
 #### `GET·/_changes`
 
-| Name     | Value     | Kind     | Required?     | Notes     |
-|------    |-------    |------    |-----------    |-------    |
+| Name  | Value  | Kind      | Required? | Notes                                                                               |
+|-------|--------|-----------|-----------|-------------------------------------------------------------------------------------|
+| feed  | String | **Query** | ❌         | `continuous` by default, set to `normal` if you want a non-continuous (static) feed |
+| since | String | **Query** | ❌         | the `seq` you'd like the feed to start from                                         |
 
 ```
 {"results":[
