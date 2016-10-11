@@ -35,6 +35,14 @@ This documentation will explain the API exposed by both of these
 services. While they are very similar, at some points they diverge.
 We'll be sure to point out those differences where they happen :)
 
+### Configuring the CLI
+
+The npm CLI client is configurable to be used with a different registry
+than the official npm registry (which is the default). For more information
+on this, check out the [npm CLI registry doc page]!
+
+[npm CLI registry doc page]: https://docs.npmjs.com/misc/registry
+
 ### Public Registry API
 
 The replication services we offer are slightly different than the
@@ -50,3 +58,5 @@ If you'd rather just jump into building something with the registry
 data, head on over to [this tutorial] to get started!
 
 [this tutorial]: https://github.com/npm/registry-follower-tutorial
+
+## Objects
