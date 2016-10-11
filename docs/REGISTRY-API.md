@@ -14,6 +14,7 @@
     - [`GET·/`](#get)
     - [`GET·/_changes`](#getchanges)
     - [`GET·/-/all`](#getall)
+    - [`GET·/-/`]
   - [Package Endpoints](#package-endpoints)
     - [`GET·/{package}`](#getpackage)
     - [`GET·/{package}/{version}`](#getpackageversion)
