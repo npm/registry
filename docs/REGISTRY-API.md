@@ -4,7 +4,6 @@
 
 - [Objects](#objects)
   - [Registry](#registry)
-  - [Change](#change)
   - [Package](#package)
   - [Version](#version)
 - [Filtering](#filtering)
@@ -12,7 +11,6 @@
 - [Endpoints](#endpoints)
   - [Meta Endpoints](#meta-endpoints)
     - [`GET·/`](#get)
-    - [`GET·/_changes`](#getchanges)
     - [`GET·/-/all`](#getall)
     - [`GET·/-/`]
   - [Package Endpoints](#package-endpoints)
@@ -34,13 +32,6 @@
 - `instance_start_time`: "1471680653634734",
 - `disk_format_version`: 6,
 - `committed_update_seq`: 2889325
-
-### Change
-
-- `seq`
-- `id`
-- `changes`
-  - `rev`
 
 ### Package
 
@@ -104,22 +95,6 @@
   "disk_format_version": 6,
   "committed_update_seq": 3351374
 }
-```
-
-#### `GET·/_changes`
-
-| Name  | Value  | Kind      | Required? | Notes                                                                               |
-|-------|--------|-----------|-----------|-------------------------------------------------------------------------------------|
-| feed  | String | **Query** | ❌         | `continuous` by default, set to `normal` if you want a non-continuous (static) feed |
-| since | String | **Query** | ❌         | the `seq` you'd like the feed to start from                                         |
-
-```
-{"results":[
-{"seq":1,"id":"_design/scratch","changes":[{"rev":"1-bbc2dd850a61789f96c1bbd219084d93"}]},
-{"seq":2,"id":"_design/app","changes":[{"rev":"1-4392b71a1168beefb0ba5173b63b24c3"}]},
-{"seq":3,"id":"Reston","changes":[{"rev":"1-de734a2e9145f8c74a2de62a385f49b5"}]},
-{"seq":4,"id":"asyncevents","changes":[{"rev":"1-15c03acf9851eb582f77c192a4df9fe3"}]},
-...
 ```
 
 #### `GET·/-/all`
