@@ -247,7 +247,7 @@ process.
 Navigate your browser to our db url:
 
 ```
-https:/replicate.npmjs.com
+https://replicate.npmjs.com
 ```
 
 ...you should see something that looks like this:
