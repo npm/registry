@@ -89,7 +89,7 @@ package to create a new `ChangesStream` to listen to listen to the npm
 registry. To do so we'll write:
 
 ```
-1  const ChangeStream = require('changes-stream');
+1  const ChangesStream = require('changes-stream');
 2 
 3  const db = 'https://replicate.npmjs.com';
 4 
