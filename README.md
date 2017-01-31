@@ -10,7 +10,6 @@ The team members are:
 
 * **[@mmalecki](https://github.com/mmalecki/)**
 * **[@soldair](https://github.com/soldair/)**
-* **[@nexdrew](https://github.com/nexdrew/)**
 * **[@chrisdickinson](https://github.com/chrisdickinson/)**
 
 ## What This Repo Is
