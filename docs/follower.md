@@ -301,8 +301,8 @@ code.
 Let's walk through what this code is doing:
 
 - On line 2, we are require the `request` package
-- On line 10, we are making a request to our db using the `request` package
-- On line 11, we parse the response from our request and grab the `update_seq`
+- On line 11, we are making a request to our db using the `request` package
+- On line 12, we parse the response from our request and grab the `update_seq`
   value.
 - On line 13, on every `data` event, we check to see if the `change.seq`
   value we get is greater than or equal to `update_seq`. Why `>=` and
@@ -318,7 +318,7 @@ changes, so this can take up to an hour.
 
 ## clean up
 
-So our follower is pretty much done! However, there's a few things that are quite
+So our follower is pretty much done! However, there's a few things that aren't quite
 right about our data. Let's do that now so we can finish up.
 
 Firstly, remember the `id`/`_id` key we recieve from our changes stream? We had
@@ -326,17 +326,17 @@ identified that as being the name of the package, but that was a generalization.
 It turns out that there are actually 2 types of things in the changes db: changes
 and "design docs".
 
-"Design docs"? What? Right. To understand this requires understand how CouchDB works
+"Design docs"? What? Right. To understand this requires understanding how CouchDB works
 a bit. One way to program with CouchDB is to write an application **within** the db.
 At this point, npm is moving away from this structure, but at one point (and still!)
 the registry was/is written as a CouchDB application. These applications exist as 
-"design docs" inside the db, so when receive data from the db, *sometimes* we receive
+"design docs" inside the db, so when we receive data from the db, *sometimes* we receive
 these design docs. If you watched your follower closely, you'd notice that 
 *sometimes* it's logging `undefined`. Those are the "design docs".
 
 To ignore these files, we can just check to see if a `change` is an actual package
 by checking if it has a `name`. We can accomplish this by checking if 
-change.doc.name` has a value before we do anything with the `change` data. In our
+`change.doc.name` has a value before we do anything with the `change` data. In our
 code, this looks like this:
 
 ```
