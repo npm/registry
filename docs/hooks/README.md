@@ -51,3 +51,5 @@ channel, or trigger an update of your own packages.
 <hr/>
 
 Excited about hooks? Check out the [API Documentation]!
+
+[API Documentation]: ./endpoints.md
