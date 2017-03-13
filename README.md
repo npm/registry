@@ -4,14 +4,6 @@ This is a public issue tracker for the npm registry. It will be used
 to announce major changes, forecast what we are working on, and to
 field issues with the registry.
 
-The registry team reports to **[@chrisdickinson](https://github.com/chrisdickinson/)**.
-
-The team members are:
-
-* **[@mmalecki](https://github.com/mmalecki/)**
-* **[@soldair](https://github.com/soldair/)**
-* **[@chrisdickinson](https://github.com/chrisdickinson/)**
-
 ## What This Repo Is
 
 If there are major releases going out, we will write them up here.
