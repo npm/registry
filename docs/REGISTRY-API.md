@@ -112,6 +112,8 @@
 | package | String | **Path**  | ✅         | the name of the package |
 | version | String | **Query** | ❌         | a version number        |
 
+This endpoint responds with the package metadata document, sometimes informally called a "packument" or "doc.json". The format of the response is described in detail in the [package metadata documentation](package-metadata.md).
+
 #### `GET·/{package}/{version}`
 
 | Name     | Value     | Kind     | Required?     | Notes     |
