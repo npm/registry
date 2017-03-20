@@ -44,7 +44,6 @@ Each version object contains the following fields:
 • `optionalDependencies`:  an object mapping package names to the required semver ranges of _optional_ dependencies
 • `devDependencies`: a mapping of package names to the required semver ranges of _development_ dependencies
 • `bundleDependencies`: an array of dependencies bundled with this version
-• `bundledDependencies`: a synonym for `bundleDependencies`
 • `peerDependencies`: a mapping of package names to the required semver ranges of _peer_ dependencies
 • `bin`: a mapping of bin commands to set up for this version
 • `directories`: an array of directories included by this version
@@ -53,7 +52,7 @@ Each version object contains the following fields:
     - `shasum`: the SHA-1 sum of the tarball
     - (in the future) a SHA-2 512 sum of the tarball
 • `engines`: node versions required for this package version
-• `_hasShrinkwrap`: `true` if this version has a shrinkwrap that must be used to install it; `false` if not.
+• `_hasShrinkwrap`: `true` if this version is known to have a shrinkwrap that must be used to install it; `false` if this version is known not to have a shrinkwrap. If this field is undefined, the client must determine through other means if a shrinkwrap exists.
 
 ## Full metadata format
 
@@ -67,29 +66,29 @@ Top-level fields:
 • `description`: the short text description of the package, from the latest version
 • `dist-tags`: a mapping of dist tags to versions. Every package will have a `latest` tag defined.
 • `homepage`: as given in package.json, for the latest version
-• `keywords`:  as given in package.json, for the latest version
-• `license`: the []
+• `keywords`: an array of keywords as given in package.json, for the latest version
+• `license`: the [SPDX identifier](https://spdx.org/licenses/) for the package's license, from the latest version
 • `maintainers`: An array of author objects. Not authoritative, but a cache.
 • `name`: the package name
 • `readme`: The first 64K of the README data for the most-recently published version of the package.
 • `readmeFilename`: The name of the file from which the readme data was taken.
 • `repository`: as given in package.json, for the latest version
-• `time`:
+• `time`: an object mapping versions to the time published, along with `created` and `modified` timestamps
 • `users`: an object whose keys are the users who have starred this package
 • `versions`: a mapping of semver-compliant version numbers to version data
 
 Each package version data object contains all of the fields in the abbreviated document, plus at least the following:
 
-• `_id`
-• `_nodeVersion`
-• `_npmUser`
-• `_npmVersion`
-• `_shasum`
-• `contributors`
-• `description`
-• `keywords`
-• `main`
-• `maintainers`
+• `_id`: `package@version`, such as `npm@1.0.0`
+• `_nodeVersion`: the version of node used to publish this
+• `_npmUser`: the author object for the npm user who published this version
+• `_npmVersion`: the version of the npm client used to publish this
+• `_shasum`: the version tarball's shasum, repeated
+• `contributors`: from package.json when published
+• `description`: from package.json when published
+• `keywords`: from package.json when published
+• `main`: the package's entry point (e.g., index.js or main.js)
+• `maintainers`: the maintainers list at the time of publication
 
 The full version object will also contain any other fields the package publisher chose to include in their package.json file for that version.
 
@@ -188,4 +187,4 @@ Full package metadata:
 }
 ```
 
-The size difference for
+The size difference is more exaggerated for packages with more versions or more stars, such as `npm` or `lodash`.
