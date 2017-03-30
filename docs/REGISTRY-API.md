@@ -119,7 +119,7 @@ This endpoint responds with the package metadata document, sometimes informally 
 | Name     | Value     | Kind     | Required?     | Notes     |
 |------    |-------    |------    |-----------    |-------    |
 | package | String | **Path** | ✅         | the name of the package |
-| version | String | **Path** | ✅         | a version number        |
+| version | String | **Path** | ✅         | a version number or `latest`        |
 
 #### `GET·/-/v1/search`
 
