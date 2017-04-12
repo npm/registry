@@ -126,7 +126,7 @@ This endpoint responds with the package metadata document, sometimes informally 
 | Name     | Value     | Kind     | Required?     | Notes     |
 |------    |-------    |------    |-----------    |-------    |
 | text | String | **Query** | ❌         | full-text search to apply |
-| size | integer | **Query** | ❌         | how many results should be returned |
+| size | integer | **Query** | ❌         | how many results should be returned (default 20, max 250) |
 | from | integer | **Query** | ❌         | offset to return results from |
 | quality | float | **Query** | ❌         | how much of an effect should quality have on search results |
 | popularity | float | **Query** | ❌         | how much of an effect should popularity have on search results |
