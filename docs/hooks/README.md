@@ -32,10 +32,7 @@ Definitely! But we want to make sure we make these work well before expanding. :
 
 ## Who can use Hooks?
 
-Any paying user of npm can set up hooks. This means if you subscribe to private packages
-or organizations you can use hooks!
-
-Note: Hooks is not currently available for Enterprise customers.
+Any npm user can use Hooks!
 
 ## How many Hooks can I have?
 
