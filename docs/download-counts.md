@@ -129,4 +129,4 @@ __Important:__ As of this writing, 19 April 2017, *scoped* packages are not yet 
 
 Bulk queries are limited to at most *128* packages at a time and at most *365 days* of data.
 
-All other queries are limited to at most *18 months* of data. The earliest date for which data will be returned is January 1, 2015.
+All other queries are limited to at most *18 months* of data. The earliest date for which data will be returned is January 10, 2015.
