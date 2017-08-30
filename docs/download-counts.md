@@ -124,3 +124,9 @@ separated list of packages rather than a single package, e.g.,
 `/downloads/point/last-day/npm,express`
 
 __Important:__ As of this writing, 19 April 2017, *scoped* packages are not yet supported in bulk queries. So you cannot request `/downloads/point/last-day/@slack/client,@iterables/map` yet. We *do* plan to support scoped modules in bulk queries as soon as we can make bulk auth checks efficiently. The latter work is in progress.
+
+## Limits
+
+Bulk queries are limited to at most *128* packages at a time and at most *365 days* of data.
+
+All other queries are limited to at most *18 months* of data. The earliest date for which data will be returned is January 10, 2015.
