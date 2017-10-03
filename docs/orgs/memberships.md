@@ -158,5 +158,6 @@ Returns:
 [Error]: #error
 [**Change Membership Request**]: #change-membership-request
 [**Membership Detail**]: #membership-detail
+[Membership Detail]: #membership-detail
 [**Roster**]: #roster
 [**Error**]: #error
