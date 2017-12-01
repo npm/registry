@@ -206,7 +206,11 @@ Special search qualifiers can be provided in the full-text query:
 
 * `author:bcoe`: Show/filter results in which `bcoe` is the author
 * `maintainer:bcoe`: Show/filter results in which `bcoe` is qualifier as a maintainer
-* `keywords:batman`: Show/filter results that have `batman` in the keywords (separate multiple keywords with commas, you may also exclude keywords e.g.: `keywords:-framework,-batman`)
+* `keywords:batman`: Show/filter results that have `batman` in the keywords
+  * separating multiple keywords with
+    * `,` acts like a logical `OR`
+    * `+` acts like a logical `AND`
+    * `,-` can be used to exclude keywords
 * `not:unstable`: Exclude packages whose version is `< 1.0.0`
 * `not:insecure`: Exclude packages that are insecure or have vulnerable dependencies (based on the [nsp](https://nodesecurity.io/) registry)
 * `is:unstable`: Show/filter packages whose version is `< 1.0.0`
