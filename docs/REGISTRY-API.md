@@ -42,7 +42,7 @@
 - `description`: description from the `package.json`
 - `dist-tags`: an object with at least one key, `latest`, representing dist-tags
 - `versions`: a List of all [Version](#version) objects for the Package
-- `time`: an object containing a `created` and `modifited` time stamp
+- `time`: an object containing a `created` and `modified` time stamp
 - `author`: object with `name`, `email`, and or `url` of author as listed in `package.json`
 - `repository`: object with `type` and `url` of package repository as listed in `package.json`
 - `_attachments`: http://docs.couchdb.org/en/2.0.0/intro/api.html#attachments
