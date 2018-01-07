@@ -290,7 +290,7 @@ code.
 11 Request.get(db, function(err, req, body) {        // <- make a request to the db
 12   var end_sequence = JSON.parse(body).update_seq; // <- grab the update_seq value
 13   changes.on('data', function(change) {
-14     if (change.seq >= end_sequence {               // <- if we're at the last change
+14     if (change.seq >= end_sequence) {             // <- if we're at the last change
 15       process.exit(0);                            // <- end the program successfully ("0")
 16     }
 17     console.log(change.doc);
