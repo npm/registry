@@ -9,7 +9,7 @@ In this article, you'll learn:
 ## background
 
 [CouchDB] is a database that uses JSON for documents, JavaScript for MapReduce indexes,
-and regular HTTP for its API. CouchDB comes with an out-of-the-box funcationality, called
+and regular HTTP for its API. CouchDB comes with an out-of-the-box functionality, called
 [CouchApp], which is a web application served directly from CouchDB. npm's registry was 
 originally exclusively a CouchApp, but as it has grown, it has slowly been separated out
 into many different services, some of which are no longer backed by the original CouchDB,
