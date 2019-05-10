@@ -14,5 +14,5 @@ topic is sensitive, please [contact npm's support staff](https://www.npmjs.com/s
 :white_check_mark: If you need something from the registry — a new API, or new information in an
 existing API — **please post that to the [ideas category](https://npm.community/c/ideas)**.
 
-If you're looking for issues that were previously lcoated here, please see
+If you're looking for issues that were previously located here, please see
 the [npm registry issue archive](https://github.com/npm/registry-issue-archive).
