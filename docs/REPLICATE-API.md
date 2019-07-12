@@ -28,7 +28,7 @@ At it's core, the registry is a [CouchDB app] which serves metadata
 for all the packages it contains. npm makes it easy to replicate this
 service by providing 2 services:
 
-- [`http://skimdb.npmjs.com`] (unscoped packages ONLY)
+- ~[`http://skimdb.npmjs.com`] (unscoped packages ONLY)~ DEPRECATED
 - [`https://replicate.npmjs.com`] (scoped packages)
 
 This documentation will explain the API exposed by both of these 
