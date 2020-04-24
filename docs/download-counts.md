@@ -25,15 +25,15 @@ Gets the total downloads for a given period, for all packages or a specific pack
 	<dt>All packages, last day:</dt>
 	<dd><a href="https://api.npmjs.org/downloads/point/last-day">/downloads/point/last-day</a></dd>
 	<dt>All packages, specific date:</dt>
-	<dd><a href="https://api.npmjs.org/downloads/point/2014-02-01">/downloads/point/2014-02-01</a></dd>
+	<dd><a href="https://api.npmjs.org/downloads/point/2019-02-01">/downloads/point/2019-02-01</a></dd>
 	<dt>Package "express", last week:</dt>
 	<dd><a href="https://api.npmjs.org/downloads/point/last-week/express">/downloads/point/last-week/express</a></dd>
 	<dt>Package "express", given 7-day period:</dt>
-	<dd><a href="https://api.npmjs.org/downloads/point/2014-02-01:2014-02-08/express">/downloads/point/2014-02-01:2014-02-08/express</a></dd>
+	<dd><a href="https://api.npmjs.org/downloads/point/2019-02-01:2019-02-08/express">/downloads/point/2019-02-01:2019-02-08/express</a></dd>
 	<dt>Package "@slack/client", last 30 days:</dt>
 	<dd><a href="https://api.npmjs.org/downloads/point/last-month/@slack/client">/downloads/point/last-month/@slack/client</a></dd>
 	<dt>Package "jquery", specific month:</dt>
-	<dd><a href="https://api.npmjs.org/downloads/point/2014-01-01:2014-01-31/jquery">/downloads/point/2014-01-01:2014-01-31/jquery</a></dd>
+	<dd><a href="https://api.npmjs.org/downloads/point/2019-01-01:2019-01-31/jquery">/downloads/point/2019-01-01:2019-01-31/jquery</a></dd>
 </dl>
 
 ### Parameters
@@ -60,8 +60,8 @@ The following incredibly simple JSON is the output:
 ```javascript
 {
   downloads: 31623,
-  start: "2014-01-01",
-  end: "2014-01-31",
+  start: "2019-01-01",
+  end: "2019-01-31",
   package: "jquery"
 }
 ```
@@ -80,11 +80,11 @@ Gets the downloads per day for a given period, for all packages or a specific pa
 	<dt>Downloads per day, last 7 days</dt>
 	<dd><a href="https://api.npmjs.org/downloads/range/last-week">/downloads/range/last-week</a></dd>
 	<dt>Downloads per day, specific 7 days</dt>
-	<dd><a href="https://api.npmjs.org/downloads/range/2014-02-07:2014-02-14">/downloads/range/2014-02-07:2014-02-14</a></dd>
+	<dd><a href="https://api.npmjs.org/downloads/range/2019-02-07:2019-02-14">/downloads/range/2019-02-07:2019-02-14</a></dd>
 	<dt>Downloads per day, last 30 days</dt>
 	<dd><a href="https://api.npmjs.org/downloads/range/last-month/jquery">/downloads/range/last-month/jquery</a></dd>
 	<dt>Downloads per day, specific 30 day period</dt>
-	<dd><a href="https://api.npmjs.org/downloads/range/2014-01-03:2014-02-03/jquery">/downloads/range/2014-01-03:2014-02-03/jquery</a></dd>
+	<dd><a href="https://api.npmjs.org/downloads/range/2019-01-03:2019-02-03/jquery">/downloads/range/2019-01-03:2019-02-03/jquery</a></dd>
 </dl>
 
 ### Parameters
@@ -99,17 +99,17 @@ Responses are very similar to the point API, except that downloads is now an arr
 {
 	downloads: [
 		{
-			day: "2014-02-27",
+			day: "2019-02-27",
 			downloads: 1904088
 		},
 		..
 		{
-			day: "2014-03-04",
+			day: "2019-03-04",
 			downloads: 7904294
 		}
 	],
-	start: "2014-02-25",
-	end: "2014-03-04",
+	start: "2019-02-25",
+	end: "2019-03-04",
 	package: "somepackage"
 }
 ```
