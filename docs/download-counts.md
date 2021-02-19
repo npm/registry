@@ -130,3 +130,14 @@ __Important:__ As of this writing, 19 April 2017, *scoped* packages are not yet 
 Bulk queries are limited to at most *128* packages at a time and at most *365 days* of data.
 
 All other queries are limited to at most *18 months* of data. The earliest date for which data will be returned is January 10, 2015.
+
+
+## Per version download counts
+
+Gets the downloads for the last 7 days per version of a specific package.
+
+<code>GET https://api.npmjs.org/versions/{package}/last-week</code>
+
+### Example
+
+<a href="https://api.npmjs.org/versions/fastify/last-week">/versions/fastify/last-week</a>
