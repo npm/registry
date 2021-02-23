@@ -138,6 +138,9 @@ Gets the downloads for the last 7 days per version of a specific package.
 
 <code>GET https://api.npmjs.org/versions/{package}/last-week</code>
 
-### Example
+Note: for scoped packages, the `/` needs to be percent encoded. (`@slack/client` -> `@slack%2Fclient`).
 
-<a href="https://api.npmjs.org/versions/fastify/last-week">/versions/fastify/last-week</a>
+### Examples
+
+<a href="https://api.npmjs.org/versions/fastify/last-week">/versions/fastify/last-week</a>  
+<a href="https://api.npmjs.org/versions/@slack%2Fclient/last-week">/versions/@slack%2Fclient/last-week</a>  
