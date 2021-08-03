@@ -2,7 +2,7 @@
 
 There is a public api that gives you download counts by package and time range.
 
-Our blog has an explanation of [how npm download counts work](http://blog.npmjs.org/post/92574016600/numeric-precision-matters-how-npm-download-counts), including "what counts as a download?"
+Our blog has an explanation of [how npm download counts work](https://blog.npmjs.org/post/92574016600/numeric-precision-matters-how-npm-download-counts-work.html), including "what counts as a download?"
 
 ## Data source
 
