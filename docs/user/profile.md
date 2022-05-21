@@ -61,7 +61,7 @@ An error. The `message` property is contains a user-facing string.
 
 ### Date
 
-All `Date` objects will be represented as ISO-8601 UTC datetime strings.
+All `Date` objects will be represented as ISO-8601 UTC datetime strings (standard global exchange of date and time-related data.)
 
 * * *
 
