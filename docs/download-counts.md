@@ -134,7 +134,7 @@ All other queries are limited to at most *18 months* of data. The earliest date 
 
 ## Per version download counts
 
-Gets the downloads for the last 7 days per version of a specific package.
+Download count for specific versions of a package are only available for the previous 7 days. They have a unique API end point
 
 <code>GET https://api.npmjs.org/versions/{package}/last-week</code>
 
@@ -143,4 +143,4 @@ Note: for scoped packages, the `/` needs to be percent encoded. (`@slack/client`
 ### Examples
 
 <a href="https://api.npmjs.org/versions/fastify/last-week">/versions/fastify/last-week</a>  
-<a href="https://api.npmjs.org/versions/@slack%2Fclient/last-week">/versions/@slack%2Fclient/last-week</a>  
+<a href="https://api.npmjs.org/versions/@slack%2Fclient/last-week">/versions/@slack%2Fclient/last-week</a>
