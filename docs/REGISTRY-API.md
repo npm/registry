@@ -98,11 +98,6 @@
 }
 ```
 
-#### `GET·/-/all`
-
-| Name     | Value     | Kind     | Required?     | Notes     |
-|------    |-------    |------    |-----------    |-------    |
-
 ### Package Endpoints
 
 #### `GET·/{package}`
