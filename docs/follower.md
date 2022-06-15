@@ -391,10 +391,5 @@ you need to restart the program.
 
 [`concurrent-couch-follower`]: https://github.com/npm/concurrent-couch-follower
 
-## go forth and make something awesome!
-
-We're seriously excited about what you'll build. Please share with us on
-twitter ([@npmjs])! And please don't hesitate to ask for help in the issues
-on this repo :)
 
 [@npmjs]: https://twitter.com/npmjs
