@@ -123,7 +123,7 @@ separated list of packages rather than a single package, e.g.,
 
 `/downloads/point/last-day/npm,express`
 
-__Important:__ As of this writing, 19 April 2017, *scoped* packages are not yet supported in bulk queries. So you cannot request `/downloads/point/last-day/@slack/client,@iterables/map` yet. We *do* plan to support scoped modules in bulk queries as soon as we can make bulk auth checks efficiently. The latter work is in progress.
+__Important:__ *Scoped* packages are not yet supported in bulk queries. So you cannot request `/downloads/point/last-day/@slack/client,@iterables/map` yet.
 
 ## Limits
 
