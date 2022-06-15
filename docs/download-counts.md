@@ -130,3 +130,17 @@ __Important:__ *Scoped* packages are not yet supported in bulk queries. So you c
 Bulk queries are limited to at most *128* packages at a time and at most *365 days* of data.
 
 All other queries are limited to at most *18 months* of data. The earliest date for which data will be returned is January 10, 2015.
+
+
+## Per version download counts
+
+Download count for specific versions of a package are only available for the previous 7 days. They have a unique API end point
+
+<code>GET https://api.npmjs.org/versions/{package}/last-week</code>
+
+Note: for scoped packages, the `/` needs to be percent encoded. (`@slack/client` -> `@slack%2Fclient`).
+
+### Examples
+
+<a href="https://api.npmjs.org/versions/fastify/last-week">/versions/fastify/last-week</a>  
+<a href="https://api.npmjs.org/versions/@slack%2Fclient/last-week">/versions/@slack%2Fclient/last-week</a>
