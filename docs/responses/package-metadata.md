@@ -177,7 +177,7 @@ An object specifying the repository where the source for this package might be f
 
 ## Abbreviated metadata format
 
-This form of the package metadata exists to provide a smaller payload designed to support installation. It contains a whitelisted subset of fields from the full metadata set. The top-level fields are:
+This form of the package metadata exists to provide a smaller payload designed to support installation. It contains an allow list of fields from the full metadata set. The top-level fields are:
 
 * `name`: the package name
 * `modified`: ISO string of the last time this package was modified
