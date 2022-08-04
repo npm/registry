@@ -213,6 +213,7 @@ Each abbreviated version object contains the following fields:
 * `devDependencies`: a mapping of package names to the required semver ranges of _development_ dependencies
 * `bundleDependencies`: an array of dependencies bundled with this version
 * `peerDependencies`: a mapping of package names to the required semver ranges of _peer_ dependencies
+* `peerDependenciesMeta`: provide npm more information on how your peer dependencies are to be used.
 * `bin`: a mapping of bin commands to set up for this version
 * `directories`: an array of directories included by this version
 * `dist`: a [dist object](#dist)
@@ -248,7 +249,7 @@ The following fields are hoisted to the top-level of the package json from the l
 * `readmeFilename`: The name of the file from which the readme data was taken.
 * `repository`: as given in package.json, for the latest version
 
-Each package version data object contains all of the fields in the abbreviated document, plus the fields listed above as hosted, plus at least the following:
+Each package version data object contains all of the fields in the abbreviated document, except `hasInstallScript`, plus the fields listed above as hosted, plus at least the following:
 
 * `_id`: `package@version`, such as `npm@1.0.0`
 * `_nodeVersion`: the version of node used to publish this
