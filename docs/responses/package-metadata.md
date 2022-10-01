@@ -218,7 +218,7 @@ Each abbreviated version object contains the following fields:
 * `dist`: a [dist object](#dist)
 * `engines`: the node engines required for this version to run, if specified
 * `_hasShrinkwrap`: `true` if this version is known to have a shrinkwrap that must be used to install it; `false` if this version is known not to have a shrinkwrap. If this field is undefined, the client must determine through other means if a shrinkwrap exists.
-* `hasInstallScript`: `true` if this version has the `install, preinstall, or postinstall` script.
+* `hasInstallScript`: `true` if this version has the `install`, `preinstall`, or `postinstall` scripts.
 
 The `name`, `version`, and `dist` fields will always be present. The others will be absent if they are irrelevant for this package version.
 
