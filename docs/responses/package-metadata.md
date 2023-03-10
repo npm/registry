@@ -213,13 +213,15 @@ Each abbreviated version object contains the following fields:
 * `devDependencies`: a mapping of package names to the required semver ranges of _development_ dependencies
 * `bundleDependencies`: an array of dependencies bundled with this version
 * `peerDependencies`: a mapping of package names to the required semver ranges of _peer_ dependencies
-* `peerDependenciesMeta`: provide npm more information on how your peer dependencies are to be used.
+* `peerDependenciesMeta`: a mapping of peer package names to additional meta information for those peers
 * `bin`: a mapping of bin commands to set up for this version
 * `directories`: an array of directories included by this version
 * `dist`: a [dist object](#dist)
 * `engines`: the node engines required for this version to run, if specified
 * `_hasShrinkwrap`: `true` if this version is known to have a shrinkwrap that must be used to install it; `false` if this version is known not to have a shrinkwrap. If this field is undefined, the client must determine through other means if a shrinkwrap exists.
 * `hasInstallScript`: `true` if this version has the `install` scripts.
+* `cpu`: an array of CPU architectures supported by the package
+* `os`: an array of operating systems supported by the package
 
 The `name`, `version`, and `dist` fields will always be present. The others will be absent if they are irrelevant for this package version.
 
