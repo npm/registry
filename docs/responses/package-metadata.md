@@ -251,7 +251,7 @@ The following fields are hoisted to the top-level of the package json from the l
 * `readmeFilename`: The name of the file from which the readme data was taken.
 * `repository`: as given in package.json, for the latest version
 
-Each package version data object contains all of the fields in the abbreviated document, plus the fields listed above as hosted, plus at least the following:
+Each package version data object contains all of the fields in the abbreviated document, except `hasInstallScript`, plus the fields listed above as hosted, plus at least the following:
 
 * `_id`: `package@version`, such as `npm@1.0.0`
 * `_nodeVersion`: the version of node used to publish this
