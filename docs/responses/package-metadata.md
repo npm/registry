@@ -209,6 +209,7 @@ Each abbreviated version object contains the following fields:
 * `version`: the version string for this version
 * `deprecated`: the deprecation warnings message of this version
 * `dependencies`: a mapping of other packages this version depends on to the required semver ranges
+* `acceptDependencies`: a mapping of packages to alternative versions that can be used
 * `optionalDependencies`:  an object mapping package names to the required semver ranges of _optional_ dependencies
 * `devDependencies`: a mapping of package names to the required semver ranges of _development_ dependencies
 * `bundleDependencies`: an array of dependencies bundled with this version
