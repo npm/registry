@@ -221,6 +221,7 @@ Each abbreviated version object contains the following fields:
 * `engines`: the node engines required for this version to run, if specified
 * `_hasShrinkwrap`: `true` if this version is known to have a shrinkwrap that must be used to install it; `false` if this version is known not to have a shrinkwrap. If this field is undefined, the client must determine through other means if a shrinkwrap exists.
 * `hasInstallScript`: `true` if this version has the `install` scripts.
+* `funding`: object containing a URL that provides up-to-date information about ways to help fund development of your package, or a string URL, or an array of these
 * `cpu`: an array of CPU architectures supported by the package
 * `os`: an array of operating systems supported by the package
 
