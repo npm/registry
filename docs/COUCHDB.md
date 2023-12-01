@@ -22,7 +22,7 @@ functionality of the original API will continue to be supported.
 This documentation serves as the source of truth for what has been, is, and will continue to
 be support by the npm registry team.
 
-[CouchDB]: http://couchdb.org
+[CouchDB]: https://couchdb.apache.org/
 [CouchApp]: http://docs.couchdb.org/en/1.6.1/couchapp/index.html
 [Postgres]: https://www.postgresql.org/
 
