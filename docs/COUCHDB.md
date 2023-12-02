@@ -22,8 +22,8 @@ functionality of the original API will continue to be supported.
 This documentation serves as the source of truth for what has been, is, and will continue to
 be support by the npm registry team.
 
-[CouchDB]: http://couchdb.org
-[CouchApp]: http://docs.couchdb.org/en/1.6.1/couchapp/index.html
+[CouchDB]: https://couchdb.apache.org/#download
+[CouchApp]: https://couchapp.readthedocs.io/en/latest/intro/what-is-couchapp.html#installing-couchapp-py
 [Postgres]: https://www.postgresql.org/
 
 ## introduction to couchdb
