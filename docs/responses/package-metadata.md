@@ -222,6 +222,7 @@ Each abbreviated version object contains the following fields:
 * `hasInstallScript`: `true` if this version has the `install` scripts.
 * `cpu`: an array of CPU architectures supported by the package
 * `os`: an array of operating systems supported by the package
+* `libc`: an array of libc implementations supported by the package.
 
 The `name`, `version`, and `dist` fields will always be present. The others will be absent if they are irrelevant for this package version.
 
