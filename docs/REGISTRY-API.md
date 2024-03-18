@@ -200,6 +200,7 @@ Special search qualifiers can be provided in the full-text query:
 
 * `author:bcoe`: Show/filter results in which `bcoe` is the author
 * `maintainer:bcoe`: Show/filter results in which `bcoe` is qualifier as a maintainer
+* `scope:foo`: Show/filter results published under the `@foo` scope
 * `keywords:batman`: Show/filter results that have `batman` in the keywords
   * separating multiple keywords with
     * `,` acts like a logical `OR`
