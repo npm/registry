@@ -51,6 +51,8 @@ Acceptable values are:
 	<dd>Gets downloads for the last 7 available days.</dd>
   	<dt>last-month</dt>
 	<dd>Gets downloads for the last 30 available days.</dd>
+	<dt>last-year</dt>
+	<dd>Gets downloads for the last 365 available days.</dd>
 </dl>
 
 ### Output
