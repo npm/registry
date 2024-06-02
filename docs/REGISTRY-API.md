@@ -207,7 +207,7 @@ Special search qualifiers can be provided in the full-text query:
     * `+` acts like a logical `AND`
     * `,-` can be used to exclude keywords
 * `not:unstable`: Exclude packages whose version is `< 1.0.0`
-* `not:insecure`: Exclude packages that are insecure or have vulnerable dependencies (based on the [nsp](https://nodesecurity.io/) registry)
+* `not:insecure`: Exclude packages that are insecure or have vulnerable dependencies (based on the [nsp](https://github.com/nodesecurity/nsp) registry)
 * `is:unstable`: Show/filter packages whose version is `< 1.0.0`
-* `is:insecure`: Show/filter packages that are insecure or have vulnerable dependencies (based on the [nsp](https://nodesecurity.io/) registry)
+* `is:insecure`: Show/filter packages that are insecure or have vulnerable dependencies (based on the [nsp](https://github.com/nodesecurity/nsp) registry)
 * `boost-exact:false`: Do not boost exact matches, defaults to `true`
